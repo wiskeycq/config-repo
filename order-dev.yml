@@ -13,3 +13,6 @@ PRODUCT:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 env:
   dev5
+girl:
+  name:caoqiang
+  age:25
