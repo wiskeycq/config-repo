@@ -13,6 +13,9 @@ spring:
     port: 5673
     username: guest
     password: guest
+  redis:
+    host: localhost
+    port: 6379
 PRODUCT:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
