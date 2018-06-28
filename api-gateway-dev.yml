@@ -1,7 +1,7 @@
 zuul:
   routes:
     myProductA:
-      path: /myProduct/**
+      path: /myProduct1/**
       serviceId: product
       sensitiveHeaders: 
     #简洁写法【不按默认的路由规则，自定义路由】
