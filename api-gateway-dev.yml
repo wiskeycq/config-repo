@@ -1,1 +1,15 @@
-env: dev
+zuul:
+  routes:
+    myProductA:
+      path: /myProduct/**
+      serviceId: product
+      sensitiveHeaders:
+    #简洁写法【不按默认的路由规则，自定义路由】
+    #product: /myProduct/**
+  #排除某些路由
+  ignored-patterns:
+    - /**/product/listForOrder
+#方法过时
+management:
+  security:
+    enabled: false
