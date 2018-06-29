@@ -5,6 +5,8 @@ spring:
     username: guest
     password: guest
 zuul:
+  #全部服务忽略敏感头（全部服务都可以使用cookie）
+  sensitive-headers:
   routes:
     myProductA:
       path: /myProduct5/**
